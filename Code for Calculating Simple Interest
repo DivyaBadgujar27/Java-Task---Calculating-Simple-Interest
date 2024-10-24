@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+class SimpleInterest
+{
+	public static void main(String args[])
+	{
+		int principal_amount, years;
+		float rate_of_interest,si;
+		Scanner s1 = new Scanner (System.in);
+
+		System.out.print("For Calculating Simple Interest");
+		System.out.print("\nEnter The Principal Amount = ");
+		principal_amount = s1.nextInt();
+		System.out.print("\nEnter The Number Of Years = ");
+		years = s1.nextInt();
+		System.out.print("\nEnter The Rate Of Interest = ");
+		rate_of_interest = s1.nextFloat();
+
+		si = (principal_amount * years * rate_of_interest) / 100;
+		System.out.printf("\nSimple Interest = %.2f",si);
+		System.out.println();
+	}
+}
